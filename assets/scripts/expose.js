@@ -2,17 +2,15 @@
 
 window.addEventListener('DOMContentLoaded', init);
 
-// scripts/expose.js
 function init() {
   const hornSelect = document.getElementById('horn-select');
   const hornImage = document.querySelector('#expose img');
   const hornAudio = document.querySelector('audio');
   const volumeSlider = document.getElementById('volume');
   const volumeIcon = document.querySelector('#volume-controls img');
-  const playButton = document.querySelector('button'); // change this
+  const playButton = document.querySelector('button');
   const jsConfetti = new JSConfetti();
 
-  // Map of horn names to their corresponding image and audio file paths
   const hornAssets = {
     'air-horn': {
       img: 'assets/images/air-horn.svg',
